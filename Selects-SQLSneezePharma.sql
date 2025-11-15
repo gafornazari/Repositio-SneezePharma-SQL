@@ -4,7 +4,7 @@ FROM Clientes c
 JOIN TelefonesClientes tc
 ON c.idCliente = tc.idCliente
 
---mostrando informações cientes restritos
+--mostrando informaÃ§Ãµes cientes restritos
 SELECT c.Nome, c.CPF, c.DataCadastro, c.DataNascimento, c.UltimaCompra, c.Situacao, tc.Contato
 FROM Clientes c
 JOIN ClientesRestritos cr
@@ -20,7 +20,7 @@ ON c.idCliente = vm.idCliente
 JOIN TelefonesClientes tc
 ON c.idCliente = tc.idCliente
 
---mostrando a produção de cada medicamento
+--mostrando a produÃ§Ã£o de cada medicamento
 SELECT p.idProducao, p.DataProducao, p.Quantidade, m.Nome, m.CDB
 FROM Producoes p
 JOIN Medicamentos m
@@ -77,7 +77,7 @@ SELECT
     f.Situacao
 FROM Fornecedores f;
 
---mostrar só os fornecedores bloqueados
+--mostrar sÃ³ os fornecedores bloqueados
 SELECT
     f.RazaoSocial,
     f.Pais,
